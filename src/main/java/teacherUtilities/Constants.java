@@ -1,4 +1,4 @@
-package de.teacherUtilities;
+package teacherUtilities;
 
 import java.awt.Dimension;
 

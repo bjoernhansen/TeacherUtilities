@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'teacherUtilities.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jfree:jfreesvg:3.4.3'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'org.jfree:jfreechart:1.5.3'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+    testImplementation 'org.mockito:mockito-core:4.9.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.9.0'
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+}
+
+jar {
+    manifest {
+        attributes('Main-Class': 'teacherUtilities.Main')
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

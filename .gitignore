@@ -1,7 +1,8 @@
 # Project exclude paths
-/out/*
+/out/
 /TeacherUtilities.iml
-/2023_02_06_12_54_23_loesungen.doc
-/2023_02_06_12_54_23_aufgaben.doc
-/.idea/*
-/.idea/
+.idea/
+*.class
+/logs/
+/.gradle/
+/build/
